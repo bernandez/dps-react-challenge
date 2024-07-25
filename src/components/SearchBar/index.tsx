@@ -28,7 +28,10 @@ const SearchBar: React.FC<SearchBarProps> = ({
           placeholder="Search users by name..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          style={{ flex: 1, marginRight: '10px', border: '2px solid black', borderRadius: '10px' }}
+          style={{ flex: 1,
+            color: "white",
+            
+            marginRight: '10px', border: '2px solid black', borderRadius: '10px' }}
         />
       </div>
       <div>
