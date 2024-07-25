@@ -25,15 +25,15 @@ const UserTable: React.FC<UserTableProps> = ({ users, highlightOldest, getOldest
     <div
       style={{
         width: '100%',
-        height: '400px',
+        height: '300px',
         border: '1px solid #ccc',
-        padding: '10px',
+        padding: '0px',
         marginTop: '20px',
         overflow: 'auto',
         borderRadius: '8px',
       }}
     >
-      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', alignItems:"center" }}>
         <thead>
           <tr>
             <th style={{ textAlign: 'left', padding: '5px', color: 'black' }}>Name</th>
@@ -51,7 +51,8 @@ const UserTable: React.FC<UserTableProps> = ({ users, highlightOldest, getOldest
               <tr key={user.id} style={{ borderBottom: '0px solid #ccc', marginBottom: '10px' }}>
                 <td
                   style={{
-                    padding: '0px 8px',
+                    textAlign:"left",
+                    padding: '0px 0px',
                     backgroundColor: isOldestInCity ? 'rgba(100, 149, 237, 0.2)' : 'transparent',
                     color: 'black',
                     marginBottom: isOldestInCity ? '32px' : '0',
@@ -63,6 +64,7 @@ const UserTable: React.FC<UserTableProps> = ({ users, highlightOldest, getOldest
                 <td
                   style={{
                     padding: '0px',
+                    textAlign:"left",
                     backgroundColor: isOldestInCity ? 'rgba(100, 149, 237, 0.2)' : 'transparent',
                     color: 'black',
                     marginBottom: isOldestInCity ? '32px' : '0',
@@ -74,6 +76,8 @@ const UserTable: React.FC<UserTableProps> = ({ users, highlightOldest, getOldest
                 <td
                   style={{
                     padding: '0px',
+                    
+                    textAlign: 'left',
                     backgroundColor: isOldestInCity ? 'rgba(100, 149, 237, 0.2)' : 'transparent',
                     color: 'black',
                     marginBottom: isOldestInCity ? '32px' : '0',
