@@ -11,7 +11,7 @@ function App() {
 				</a>
 			</div>
 			<div className="home-card">
-				<UserSearch/>
+				<UserSearch />
 			</div>
 		</>
 	);
